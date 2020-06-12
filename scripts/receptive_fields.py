@@ -14,9 +14,6 @@ def one_receptive_field(data_path,time_series):
     mov = mov[:, :, ivalid]
     ly, lx, nstim = mov.shape
 
-    print(time_series.shape[-1])
-    print(mov.shape)
-
     mov=mov[:,:,:30000]
 
     NT=30000
@@ -44,3 +41,4 @@ def show_receptive_field(B0,tau):
     # rfmax = np.max(np.abs(rf))
     plt.title('Receptive field with '+str(tau)+' timeconstant')
     plt.imshow(rf, aspect='auto', cmap = 'bwr', vmin = -rfmax, vmax = rfmax)
+    plt.show()
