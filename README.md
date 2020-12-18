@@ -4,6 +4,8 @@
 
 Maria Kesa
 
+The presentation of this NeuroMatch2020 is here: https://github.com/mariakesa/neuromatch2020/blob/master/neuromatch_presentation_MariaKesa.pdf
+
 How good is our understanding and our models of synaptic plasticity? We combine experimental data from V1 and simulations to study the effect of synaptic plasticity on the receptive field of an artificial neuron (Stringer et al, 2019). We use a clustering algorithm called Ensemble Pursuit (Kesa, Stringer, Pachitariu, 2019) to extract two neural clusters from data, one localized ensemble associated with neurons that share a similar receptive field and one spatially spread out ensemble whose activity is well predicted by behavior (motion SVD’s of the mouse’s snout) and use neurons from the clusters as synaptic inputs to an artificial neuron.  Without plasticity at the synapses the artificial neuron has a linear receptive field. However when we endow synapses with Bienenstock-Munro-Cooper or Hebbian plasiticity, the receptive fields disappear. Future work will consider developing smart learning rules that permit selective integration of information without disrupting the functionality of neurons. 
 
 References:
